@@ -14,6 +14,14 @@ elif qw == "2":
     print(f"произведение ваших чисел: {result}")
 else:
     print("ошибка, выберите 1,2")
+def multiply_list(numbers):
+    result = 1
+    for number in numbers:
+        result *= number
+    return result
+my_list = [3, 5, 7, 9]
+product = multiply_list(my_list)
+print(product)
 
 #2)
 num1 = int(input("введите первое число: "))
